@@ -1,2 +1,2 @@
-# WEB-UI-Robert-Benavidez
+# WEB-UI
 Landing Page for Better Friend Reminders
