@@ -79,26 +79,26 @@ body {
   text-align: center;
 }
 
-a {
+.header a {
   color: inherit;
 }
 
-small {
+.header small {
   font-size: 14px;
 }
 
-ul {
+.header ul {
   /* margin-left: 15px; */
   padding: 0;
 }
 
-li {
+.header li {
   list-style: none;
   font-size: 25px;
   padding: 5px 0;
   
 }
-    a {
+    .header a {
     text-decoration: none;
 
     }

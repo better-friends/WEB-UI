@@ -1,0 +1,213 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* _________________^^  R E S E T ^^_________________ */
+
+.container {
+	max-width: 1092px;
+    width: 100%;
+    height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: rgba(74, 189, 172, 0.383);
+  height: 100%;
+  font-family: 'Roboto', Georgia, sans-serif;
+  font-weight: 400;
+  /* overflow: hidden; */
+}
+
+h1 {
+  font-size: 3.5em;
+  margin: 0;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 3em;
+  margin: 0;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 2.5em;
+  margin: 0;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 2.125em;
+  margin: 0;
+  font-weight: normal;
+}
+
+h5 {
+  font-size: 1.75em;
+  margin: 0;
+  font-weight: normal;
+}
+
+h6 {
+  font-size: 1.25em;
+  margin: 0;
+  font-weight: normal;
+}
+
+.spacer {
+    padding-top: 50px;
+}
+
+.full-card {
+  margin: 25px auto;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 60px;
+  height: 80vh;
+  max-height: 600px;
+  background: white;
+  width: 90%;
+  max-width: 1300px;
+  box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 55px 50px -35px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
+}
+
+.font-card {
+  position: static;
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background: linear-gradient(45deg, rgba(159, 190, 230, 1) 0%, rgba(223, 234, 238, 1) 100%);
+  padding: 20px 20px;
+  color: white;
+  margin: 0 15px;
+  text-align: center;
+  box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 55px 50px -35px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s, transform 0.3s;
+  transition-delay: 0.15s;
+}
+      .font-card .hovered-card {
+        box-shadow: 0 5px 3px -5px rgba(0, 0, 0, 0.3), 0 2px 8px -5px rgba(0, 0, 0, 0.3);
+        transform: translateY(-2px);
+      }
+      p {
+        line-height: 1.4;
+      }
+
+.font-description {
+  padding: 0 30px;
+  margin: 15px;
+  width: 44%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+      h2 {
+        color: rgb(86, 87, 94);
+    }
+            span {
+              color: rgb(210, 210, 210);
+            }
+      p {
+        padding-left: 15px;
+        color: #777;
+        line-height: 1.8;
+    }
+            p:before {
+              content: "\2014";
+              margin-left: -15px;
+              margin-right: 4px;
+            }
+
+@media screen and (max-width: 991px) {
+  .full-card {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 30px 60px;
+  }
+  .font-card {
+    width: calc(50% - 30px);
+  }
+  .font-description {
+    width: 100%;
+  }
+}
+
+/* ////////////////BACKGROUNDS//////////////// */
+
+.robotoslab-card {
+  background: url(https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80) no-repeat center center;
+  background-size: cover;
+}
+
+
+.lobster-card {
+  background: url(https://images.unsplash.com/photo-1514448553123-ddc6ee76fd52?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80) no-repeat center center;
+  background-size: cover;
+}
+
+.eczar-card {
+  background: url(https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80) no-repeat center center;
+  background-size: cover;
+}
+
+
+/* ////////////////END BACKGROUNDS/////////////// */
