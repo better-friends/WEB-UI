@@ -68,7 +68,6 @@
 
 .burger-check:checked ~ .nav-mobile {
   max-height: 500px;
-  
   transition: max-height 0.4s ease-in-out;
 }
 
@@ -76,7 +75,7 @@
 body {
   font-family: 'Libre Baskerville', serif;
   font-style: italic;
-  font-size: 30px;
+  /* font-size: 30px; */
   text-align: center;
 }
 
@@ -89,7 +88,7 @@ small {
 }
 
 ul {
-  margin: 0;
+  margin-left: 15px;
   padding: 0;
 }
 
@@ -107,4 +106,53 @@ li {
             text-decoration: underline;
             color: #F7B733;
             transition: 0.5s;
-        }    
+        }
+        
+.right-nav {
+  /* max-width: 800px; */
+  /* width: 50%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.header {
+  background-color: #4aBDac;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0px;
+}
+
+.header h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.header h2 {
+  font-size: 1.2rem;
+}
+
+.signin {
+  margin-right: 150px;
+}
+
+.login-button {
+  /* max-width: 500px; */
+  /* width: 70%; */
+  text-align: center;
+  padding: 15px;
+  background-color: #F7B733;
+  border-radius: 15px;
+  /* margin-top: 15px; */
+  /* margin-bottom: 15px; */
+}
+
+.login-button:hover {
+  color: #4aBDac;
+  transition: .3s; 
+}
