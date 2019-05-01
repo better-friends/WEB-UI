@@ -88,7 +88,7 @@ small {
 }
 
 ul {
-  margin-left: 15px;
+  /* margin-left: 15px; */
   padding: 0;
 }
 
@@ -123,14 +123,16 @@ li {
   /* flex-direction: column; */
   align-items: center;
   justify-content: space-between;
-  padding: 50px 0px;
+  padding: 40px 0px;
+  position: fixed;
+  width: 100%;
 }
 
 .header h1 {
   color: #fff;
   font-size: 2rem;
   font-weight: bold;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .header h2 {
@@ -153,6 +155,42 @@ li {
 }
 
 .login-button:hover {
-  color: #4aBDac;
+  color: rgb(110, 110, 110);
   transition: .3s; 
+}
+
+@media(max-width: 650px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .header h1 {
+    font-size: 1.2rem;
+    margin-left: 0;
+  }
+  
+  .header h2 {
+    font-size: .8rem;
+    font-weight: bold; 
+  }
+
+  .signin {
+    margin-bottom: 15px;
+  }
+
+  .right-nav {
+    flex-direction: column;
+    margin-right: 0;
+    margin-top: 15px;
+  }
+
+  .burger {
+    margin-top: 15px;
+  }
+
+  .nav-mobile {
+    margin-top: 15px;
+  }
 }
